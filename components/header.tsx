@@ -9,7 +9,7 @@ export function Header() {
     <Container className="mt-5 mb-10">
       <nav className="relative flex justify-between items-center">
         <div>
-          <Link href="/">
+          {/* <Link href="/">
             <Image
               src="/images/portrait.jpeg"
               alt="Portrait"
@@ -17,7 +17,7 @@ export function Header() {
               height={48}
               className="w-10 h-10 rounded-full ring-2 ring-zinc-200 dark:ring-zinc-400/40"
             />
-          </Link>
+          </Link> */}
         </div>
         <div className="pointer-events-auto">
           <ThemeSwitcher />

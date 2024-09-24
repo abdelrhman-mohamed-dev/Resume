@@ -5,7 +5,7 @@ type Props = {
 
 export default function Section({ title, children }: Props) {
   return (
-    <section className="mt-2">
+    <section className="mt-8">
       <h3 className="text-md font-bold text-teal-500 dark:text-teal-500">
         {title}
       </h3>

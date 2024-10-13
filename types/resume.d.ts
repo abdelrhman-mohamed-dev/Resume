@@ -9,6 +9,6 @@ type ExperienceProps = {
 type EducationProps = {
   title: string;
   gpa: string;
-  org: { name: string; logo: ImageProps["src"] };
+  org: { name: string; logo: ImageProps["src"]; link: string };
   time: string;
 };

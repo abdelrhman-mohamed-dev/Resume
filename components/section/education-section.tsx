@@ -1,16 +1,18 @@
 import Section from "./section";
 import { Icons } from "@/components/icons";
 import LabelWithGraphic from "@/components/label-with-graphic";
+import Link from "next/link";
 
 const education: EducationProps[] = [
   {
     title: "Bachelor of Computer Science",
-    gpa: "",
+    gpa: "Very Good",
     org: {
-      name: "University of British Columbia",
+      name: "Higher Institutes of Al Obour",
       logo: "/images/logos/ubc.svg",
+      link: "https://www.ubc.ca/",
     },
-    time: "Sep 2022 - Pres.",
+    time: "Sep 2020 - May 2024.",
   },
 ];
 
@@ -27,7 +29,9 @@ function Education({ title, gpa, org, time }: EducationProps) {
           </div>
           <span>{time}</span>
         </div>
-        <LabelWithGraphic image={org.logo} content={org.name} />
+        <Link href={org.link} target="_blank">
+          <LabelWithGraphic image={org.logo} content={org.name} />
+        </Link>
       </div>
       <div className="text-sm font-semibold md:hidden text-zinc-700 dark:text-zinc-300 mb-1">
         <div className="flex gap-x-4 flex-wrap justify-between">

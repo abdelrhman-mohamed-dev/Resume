@@ -5,8 +5,26 @@ import { Icons } from "@/components/icons";
 
 const exp: ExperienceProps[] = [
   {
+    head1: "Front-end Developer",
+    head2: <LabelWithGraphic icon={Icons.Stack} content="JavaScript, React, Next.js ,tailwind , CSS, HTML" />,
+    head3: (
+      <LabelWithGraphic
+        image=""
+        content="Swaqnt, Tanta, Egypt"
+      />
+    ),
+    head4: "Aug 2024 - Present",
+    bulletPoints: [
+      "Developed and maintained responsive user interfaces using React and Next.js, ensuring high performance across multiple devices and browsers.",
+      "Collaborated with back-end developers to integrate APIs, enhancing data flow and user experience.",
+      "Implemented reusable components, optimizing performance and code maintainability across the platform.",
+      "Led front-end efforts for key projects, including optimizing user interaction and reducing page load times.",
+    ],
+  }
+  ,
+  {
     head1: "Full Stack Developer",
-    head2: <LabelWithGraphic icon={Icons.Stack} content="JavaScript, Express.js" />,
+    head2: <LabelWithGraphic icon={Icons.Stack} content="JavaScript, Express.js, TypeScript, Node.js" />,
     head3: (
       <LabelWithGraphic
         image=""
@@ -21,23 +39,7 @@ const exp: ExperienceProps[] = [
       "Collaborated closely with front-end developers to enhance user interfaces and deliver a smooth user experience.",
     ],
   },
-  {
-    head1: "Front-end Developer",
-    head2: <LabelWithGraphic icon={Icons.Stack} content="JavaScript, React, Next.js" />,
-    head3: (
-      <LabelWithGraphic
-        image=""
-        content="Swaqnt, tanta, Egypt"
-      />
-    ),
-    head4: "Aug 2024 - Pres.",
-    bulletPoints: [
-      "Voluptate occaecat reprehenderit aliqua mollit do amet eiusmod minim velit et non deserunt ex.",
-      "Anim laborum elit eiusmod ullamco deserunt aliqua id est.",
-      "Voluptate occaecat reprehenderit aliqua mollit do amet eiusmod minim velit et non deserunt ex.",
-      "Anim laborum elit eiusmod ullamco deserunt aliqua id est.",
-    ],
-  },
+
 ];
 
 export default function WorkSection() {
